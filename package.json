@@ -1,6 +1,6 @@
 {
   "name": "gulp-pkgcloud-upload",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Upload files to a cloud service via pkgcloud",
   "main": "index.js",
   "scripts": {
