@@ -1,0 +1,16 @@
+{
+  "name": "gulp-pkgcloud-upload",
+  "version": "0.0.1",
+  "description": "Upload files to a cloud service via pkgcloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank Weindel",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.4",
+    "pkgcloud": "^1.2.0-alpha.0",
+    "stream-to-queue": "^1.0.1"
+  }
+}
