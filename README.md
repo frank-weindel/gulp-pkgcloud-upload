@@ -5,6 +5,11 @@ What sets this gulp plugin apart from gulp-cloudfiles is that it can potentially
 
 **At the moment, this library only supports streaming. So set { buffer: false } on the gulp.src call.**
 
+## Installing
+```
+npm install gulp-pkgcloud-upload
+```
+
 ## Example
 ```javascript
 var gulp = require('gulp');
