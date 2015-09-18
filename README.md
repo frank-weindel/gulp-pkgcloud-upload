@@ -4,7 +4,7 @@
 
 A [gulp](https://github.com/gulpjs/gulp) plugin for uploading files to a cloud service via pkgcloud. This plugin is based off of [gulp-cloudfiles](https://github.com/pieceoftoast/gulp-cloudfiles) by [pieceoftoast](https://github.com/pieceoftoast).
 
-What sets this gulp plugin apart from gulp-cloudfiles is that it can potentially support any cloud provider that pkgcloud supports and it will wait until all files have been uploaded before telling gulp to proceed on to the next task.
+What sets this gulp plugin apart from gulp-cloudfiles is that it can potentially support any [Storage provider that pkgcloud supports](https://github.com/pkgcloud/pkgcloud#storage) and it will wait until all files have been uploaded before telling gulp to proceed on to the next task.
 
 **At the moment, this library only supports streaming. So set { buffer: false } on the gulp.src call.**
 
