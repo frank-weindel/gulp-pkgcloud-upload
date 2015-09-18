@@ -3,9 +3,9 @@ A [gulp](https://github.com/gulpjs/gulp) plugin for uploading files to a cloud s
 
 What sets this gulp plugin apart from gulp-cloudfiles is that it can potentially support any cloud provider that pkgcloud supports and it will wait until all files have been uploaded before telling gulp to proceed on to the next task.
 
-** At the moment, this library only supports streaming. So set { buffer: false } on the gulp.src call. **
+**At the moment, this library only supports streaming. So set { buffer: false } on the gulp.src call.**
 
-# Example
+## Example
 ```javascript
 var gulp = require('gulp');
 var pkgcloudUpload = require('gulp-pkgcloud-upload');
