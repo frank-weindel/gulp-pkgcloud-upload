@@ -7,7 +7,7 @@ What sets this gulp plugin apart from gulp-cloudfiles is that it can potentially
 
 ## Installing
 ```
-npm install gulp-pkgcloud-upload
+npm install gulp-pkgcloud-upload --save-dev
 ```
 
 ## Example
