@@ -1,4 +1,7 @@
 # gulp-pkgcloud-upload
+[![NPM](https://nodei.co/npm/gulp-pkgcloud-upload.png)](https://npmjs.org/package/gulp-pkgcloud-upload)
+
+
 A [gulp](https://github.com/gulpjs/gulp) plugin for uploading files to a cloud service via pkgcloud. This plugin is based off of [gulp-cloudfiles](https://github.com/pieceoftoast/gulp-cloudfiles) by [pieceoftoast](https://github.com/pieceoftoast).
 
 What sets this gulp plugin apart from gulp-cloudfiles is that it can potentially support any cloud provider that pkgcloud supports and it will wait until all files have been uploaded before telling gulp to proceed on to the next task.
