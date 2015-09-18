@@ -17,7 +17,10 @@ npm install gulp-pkgcloud-upload --save-dev
 ```javascript
 var gulp = require('gulp');
 var pkgcloudUpload = require('gulp-pkgcloud-upload');
-var uploadConfig =  {
+
+// This config object is passed directly to pkgcloud.
+// See pkgcloud docs for how it should appear for various Storage providers
+var pkgcloudConfig =  {
   provider: 'rackspace', // Other providers should be supported (not tested)
   username: 'yourRackspaceUsername',
   apiKey: 'YOUR KEY',
@@ -29,7 +32,7 @@ gulp.task('deploy', function() {
   return gulp
     .src('./mobile/build/**', { buffer: false })
     .pipe(
-      pkgcloudUpload(uploadConfig, {
+      pkgcloudUpload(pkgcloudConfig, {
         uploadPath: 'someFolder/mobile', // Where to place files
         headers: { // Optional set of HTTP headers to apply to each file
           'Access-Control-Allow-Origin': '*'
