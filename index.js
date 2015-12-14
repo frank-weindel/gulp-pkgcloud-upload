@@ -13,7 +13,7 @@ var pkgcloudUpload = function (pkgcloudConfig, options) {
   return streamToQueue(function (file, cb) {
 
     var uploadPath = file.path.replace(file.base, '').replace(/\\/g,'/');
-    uploadPath = path.join(options.uploadPath, uploadPath);
+    uploadPath = path.join(options.uploadPath, uploadPath).replace(/\\/g,'/');
 
     var headers = { 'x-amz-acl': 'public-read' };
     if (options.headers) {
